@@ -1,5 +1,5 @@
 @extends('master')
-@section('title', 'Home')
+@section('title', 'KRN Informatix | Home')
 
 @section('content')
     <div class="flex flex-col-reverse md:flex-row-reverse px-4 py-4 md:px-20 gap-y-5">
