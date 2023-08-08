@@ -220,7 +220,16 @@
             <div class="w-full md:w-1/3">
 
                 <h3 class="text-primary font-bold text-center">For Freshers</h3>
-                <div class="border border-black/50 rounded-tr-xl rounded-bl-xl px-4 py-3">
+                <div
+                    class="border bg-gray-300 border-black/50 transition-[background-color,box-shadow] duration-500 ease-in-out group hover:bg-white hover:shadow-xl rounded-tr-xl inline-flex w-full items-center justify-between gap-x-4 rounded-bl-xl px-4 py-3">
+                    <div class="inline-flex gap-x-4 items-center">
+                        {{-- Replace this with Image --}}
+                        <div class="w-10 h-10 rounded-full bg-white border border-black/50">
+                        </div>
+                        <h4 class="font-bold">DevOps</h4>
+                    </div>
+                    <a href='#' class='text-primary font-bold duration-500 ease-in-out transition-colors'>Read
+                        More</a>
                 </div>
             </div>
         </div>
