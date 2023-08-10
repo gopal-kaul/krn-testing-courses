@@ -124,6 +124,55 @@
     </nav>
 
     @yield('content')
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto px-4 md:px-20">
+            <div class="flex flex-col md:flex-row justify-evenly">
+                <div class="flex flex-col space-y-2 lg:w-1/3">
+                    <img src="{{ asset('assets/logo.png') }}" alt="logo" class="w-40">
+                    <p class="text-sm md:text-base lg:text-lg">
+                        KRN Informatix offers software testing and training services in one place. This institute gives
+                        young people who want to get jobs the right place to start if they want to build a rewarding
+                        career in the growing IT sector.
+                    </p>
+                </div>
+
+                <div class="flex flex-col lg:items-center w-full lg:w-1/3">
+                    <div class="gap-y-2 flex flex-col">
+                        <h3 class="font-bold text-lg">Quick Links</h3>
+                        <a href="/"
+                            class="{{ request()->is('/') ? 'text-red-500 opacity-100' : 'text-white opacity-70' }} hover:text-red-500 hover:opacity-100 transition-[color,opacity] duration-500 ease-in-out">Home</a>
+                        <a href="/about"
+                            class="{{ request()->is('about') ? 'text-red-500 opacity-100' : 'text-white opacity-70' }} hover:text-red-500 hover:opacity-100 transition-[color,opacity] duration-500 ease-in-out">About</a>
+                        <a href="/courses"
+                            class="{{ request()->is('courses') ? 'text-red-500 opacity-100' : 'text-white opacity-70' }} hover:text-red-500 hover:opacity-100 transition-[color,opacity] duration-500 ease-in-out">Courses</a>
+                        <a href="/upcoming-batches"
+                            class="{{ request()->is('upcoming-batches') ? 'text-red-500 opacity-100' : 'text-white opacity-70' }} hover:text-red-500 hover:opacity-100 transition-[color,opacity] duration-500 ease-in-out">Upcoming
+                            Batches</a>
+                        <a href="/blog"
+                            class="{{ request()->is('blog') ? 'text-red-500 opacity-100' : 'text-white opacity-70' }} hover:text-red-500 hover:opacity-100 transition-[color,opacity] duration-500 ease-in-out">Blog</a>
+                        <a href="/career"
+                            class="{{ request()->is('career') ? 'text-red-500 opacity-100' : 'text-white opacity-70' }} hover:text-red-500 hover:opacity-100 transition-[color,opacity] duration-500 ease-in-out">Career</a>
+                        <a href="/contact"
+                            class="{{ request()->is('contact') ? 'text-red-500 opacity-100' : 'text-white opacity-70' }} hover:text-red-500 hover:opacity-100 transition-[color,opacity] duration-500 ease-in-out">Contact</a>
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-center lg:w-1/3">
+                    <div class="space-y-2 flex flex-col">
+                        <h3 class="font-bold text-lg">Contact Us</h3>
+                        <p>Address: # 5/2, 3rd Floor, Varthur Road, Kundalahalli Gate, Opposite to SKR Convention Hall,
+                            Next to AXIS Bank, Bangalore-560066</p>
+                        <p>Phone: +91-9700779923</p>
+                        <p>Email:
+                            <a href="mailto:" class="hover:text-red-500">
+                                temp
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script type="module" src="resources/js/app.js"></script>
     <script>
